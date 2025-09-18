@@ -17,7 +17,6 @@ export default function ExamList({ studentId, kelasId }) {
           setLoading(false);
           return;
         }
-
         // 1️⃣ Ambil daftar ujian
         let q = collection(db, "exams");
         if (kelasId) {
